@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_score_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_team_a_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:gravity="center"
+                android:text="@string/team_a"
+                android:textColor="@color/darkGray"
+                android:textSize="@dimen/dimen_14sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/tv_team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_56sp"
+                app:fontFamily="sans-serif-light" />
+
+            <Button
+                android:id="@+id/btn_three_point_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24dp"
+                android:layout_marginRight="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/btn_three_point" />
+
+            <Button
+                android:id="@+id/btn_two_point_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24dp"
+                android:layout_marginRight="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/btn_two_point" />
+
+            <Button
+                android:id="@+id/btn_free_point_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24dp"
+                android:layout_marginRight="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/btn_free_throw" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_120dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/darkGray" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_team_b_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:gravity="center"
+                android:text="@string/team_b"
+                android:textColor="@color/darkGray"
+                android:textSize="@dimen/dimen_14sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/tv_team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_56sp"
+                app:fontFamily="sans-serif-light" />
+
+            <Button
+                android:id="@+id/btn_three_point_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24dp"
+                android:layout_marginRight="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/btn_three_point" />
+
+            <Button
+                android:id="@+id/btn_two_point_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24dp"
+                android:layout_marginRight="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/btn_two_point" />
+
+            <Button
+                android:id="@+id/btn_free_point_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24dp"
+                android:layout_marginRight="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/btn_free_throw" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll_score_board"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_32dp"
+        android:text="@string/btn_reset" />
+
+</RelativeLayout>
